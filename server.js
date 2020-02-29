@@ -17,4 +17,4 @@ app.get('/', (req, res)=>{
     res.json(data);
 });
 
-app.listen(5000, ()=>{console.log("App listen port 5000")});
+app.listen(process.env.PORT || 5000, ()=>{console.log("App Ativado")});
